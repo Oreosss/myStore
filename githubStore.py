@@ -146,11 +146,8 @@ class Store :
                 CustAdded.setSize(18)
                 CustAdded.draw(win)
             pt = win.getMouse()
-            
-               
+                 
         win.close()
-        
-        
                
                                                                 #ITEM METHODS
     def addItem (self):
@@ -209,21 +206,8 @@ class Store :
                 ItemAdded.draw(win)
             pt = win.getMouse()
         win.close()
-     
-        
-   
-    
-
-    
-
-    
-
-
-
                                    #PURCHASE METHODS
 
-
-    
                 
     def addPurchase (self):
          win = GraphWin ("Store",400,200)
@@ -288,16 +272,10 @@ class Store :
                 self.purchaseList.append(newOrder)
          pt = win.getMouse()
          win.close()
-       
+     
 
-   
-
-    
-  
-
-
-                                        #REMOVE WINDOW: This window opens when remove button is clicked.
-                                        #Contains mini windows where you can make selections of the object you'd like to delete.
+              #REMOVE WINDOW: This window opens when remove button is clicked.
+              #Contains mini windows where you can make selections of the object you'd like to delete.
 
 
 
@@ -781,57 +759,57 @@ class Store :
 
 
                                                         #REMOVE METHODS
-##    def removeCustomerID (self,ID):
-##          Rcustomer = self.searchCustomerID(ID)
-##
-##          if Rcustomer != False:
-##              self.customerList.remove(Rcustomer)
-##              #print (Rcustomer.getFname()+ " " + Rcustomer.getLname()," has been removed")
-##          else:
-##              Rcustomer == False
-##
-##
-##    def removeCustomerName (self, Lname , Fname):
-##        Rcustomer = self.searchCustomerName(Lname, Fname)
-##
-##        if Rcustomer != False:
-##              self.customerList.remove(Rcustomer)
-##              #print ("Customer has been removed")
-##        else:
-##              Rcustomer = False
-##
-##        
-##
-##    def removeItemID (self,productID):
-##          Ritem = self.searchItemID(productID)
-##
-##          if Ritem != False:
-##              self.itemList.remove(Ritem)
-##              #print ("Item has been removed")
-##          else:
-##             Rcustomer = False
-##
-##          
-##        
-##    def removeItembyName (self,productName):
-##        Ritem = self.searchItemID(productName)
-##
-##        if Ritem != False:
-##          self.itemList.remove(Ritem)
-##          #print ("Item has been removed")
-##        else:
-##          Rcustomer == False
-##
-##        
-##
-##    def removePurchase(self, receiptID):
-##        ROrder = self.searchReceiptID(receiptID)
-##
-##        if ROrder != False:
-##          self.itemList.remove(Ritem)
-##          #print ("Order has been cancelled")
-##        else:
-##          Rcustomer == False
+    def removeCustomerID (self,ID):
+          Rcustomer = self.searchCustomerID(ID)
+
+         if Rcustomer != False:
+             self.customerList.remove(Rcustomer)
+             #print (Rcustomer.getFname()+ " " + Rcustomer.getLname()," has been removed")
+          else:
+              Rcustomer == False
+
+
+    def removeCustomerName (self, Lname , Fname):
+        Rcustomer = self.searchCustomerName(Lname, Fname)
+
+        if Rcustomer != False:
+              self.customerList.remove(Rcustomer)
+              #print ("Customer has been removed")
+        else:
+              Rcustomer = False
+
+        
+
+    def removeItemID (self,productID):
+          Ritem = self.searchItemID(productID)
+
+          if Ritem != False:
+              self.itemList.remove(Ritem)
+              #print ("Item has been removed")
+           else:
+             Rcustomer = False
+
+          
+        
+    def removeItembyName (self,productName):
+        Ritem = self.searchItemID(productName)
+
+        if Ritem != False:
+          self.itemList.remove(Ritem)
+          #print ("Item has been removed")
+        else:
+          Rcustomer == False
+
+        
+
+    def removePurchase(self, receiptID):
+        ROrder = self.searchReceiptID(receiptID)
+
+        if ROrder != False:
+          self.itemList.remove(Ritem)
+          #print ("Order has been cancelled")
+        else:
+          Rcustomer == False
 
         
 
